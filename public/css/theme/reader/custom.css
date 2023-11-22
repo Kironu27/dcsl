@@ -1,0 +1,90 @@
+.navbar-item img {
+  width:200px;
+}
+
+.widget-categories a::before {
+  position: absolute;
+  content: "";
+  color: #263A79;
+  left: 0;
+  top: 0;
+}
+
+.pagination .page-item:first-child .page-link,
+.pagination .page-item:last-child .page-link{
+  border-radius: 0%;
+  border-color:transparent;
+  width:100%;
+}
+
+.btn-delete{
+  cursor:pointer;
+}
+.input-group .input{
+  border:1px solid grey;
+}
+
+
+.avatar-wrapper {
+  position: relative;
+  height: 200px;
+  width: 200px;
+  margin: 50px auto;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 1px 1px 15px -5px black;
+  transition: all 0.3s ease;
+}
+.avatar-wrapper:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+.avatar-wrapper:hover .profile-pic {
+  opacity: 0.5;
+}
+
+.avatar-wrapper:hover .profile-pic:after {
+  content: "\e6b2"; /* Themify cloud-up icon code */
+  opacity: 1;
+  width: 20%;
+  height: 20%;
+}
+.avatar-wrapper .profile-pic {
+  height: 100%;
+  width: 100%;
+  transition: all 0.3s ease;
+}
+.avatar-wrapper .profile-pic:after {
+  font-family: "themify";
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 50%;
+  opacity: 0;
+  position: absolute;
+  font-size: 150px;
+  background: #ecf0f1;
+  color: #34495e;
+  text-align: center;
+  z-index: 9999;
+}
+.avatar-wrapper .upload-button {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100px;
+  width: 100px;
+}
+.avatar-wrapper .upload-button .fa-arrow-circle-up {
+  position: absolute;
+  font-size: 134px;
+  top: 20%;
+  left: 30%;
+  text-align: center;
+  opacity: 0;
+  transition: all 0.3s ease;
+  color: #34495e;
+}
+.avatar-wrapper:hover .upload-button .fa-arrow-circle-up {
+  opacity: 0.9;
+}
